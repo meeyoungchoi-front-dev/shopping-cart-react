@@ -1,8 +1,23 @@
-# React + Vite
+# 배달 주문 프로젝트
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 프로젝트 설명
++ 메뉴가 리스트 형태로 주어지고, 여기에 원하는 메뉴 수량을 조절할 수 있다. 
++ 각 메뉴 카드 오른쪽에 추가하기 버튼이 있어서 누르면 장바구니에 담을 수 있다.
++ 네비게이션 바에 있는 장바구니 버튼을 클릭하면 장바구니를 모달로 볼 수 있어서 한꺼번에 결제를 할 수 있다.
 
-Currently, two official plugins are available:
+## 기능 요구사항
++ 3~5개 정도의 음식 메뉴 카드를 만듭니다
++ 항목에는 다음과 같은 프로퍼티가 필요합니다.
+  + 음식 이름 : string
+  + 음식 가격 : number
+  + 수량 : number
++ 최소 수량은 1입니다. 추가하기 버튼을 누른 후 수량은 1로 초기화가 되야 합니다.
++ 추가한 항목들은 장바구니 버튼을 눌러서 모달에서 볼 수 있어야 합니다.
++ 모달에서는 품목별로 수량이 합산되서 나타나며 더하거나 뺄 수 있습니다.
++ 전체 금액을 합산해서 모달에서 볼 수 있습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 기술적 요구사항
++ 리액트 빌트인 훅(useEffect, useMemo, useCallback 등)를 적절하게 목적에 맞게 사용합니다.
++ 리액트 심화에서 배운 내용들(Ref, Portal, Fragment 등)을 적용해 봅니다.
++ 하나의 컴포넌트는 하나의 역할을 하는 방향으로 만들어 봅니다.
++ 변수명, 함수명을 명시적으로 바로 잘 이해할 수 있게 작성해 봅니다.
